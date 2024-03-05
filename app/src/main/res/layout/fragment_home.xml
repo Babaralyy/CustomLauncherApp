@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvApps"
+        style="@style/scrollbar_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/etSearch"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        android:autofillHints=""
+        android:background="@drawable/search_back"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/notification_grey"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:minHeight="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/hint_color"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"/>
+
+
+
+    <View
+        android:id="@+id/leftView"
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_view_back"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/rightView"
+        android:layout_width="3dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_view_back"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

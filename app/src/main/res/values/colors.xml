@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="notification_grey">#D9D9D9</color>
+    <color name="hint_color">#DFDFDF</color>
+    <color name="scroll_track_color">#19D9D9D9</color>
+    <color name="scroll_thumb_color">#E2E2E2</color>
+    <color name="not_back_color">#343434</color>
+
+
+    <color name="boarding_back_color">#0075FF</color>
+    <color name="lightBlue">#bdd5ea</color>
+    <color name="red">#FF5F2C</color>
+    <color name="green">#04C44A</color>
+    <color name="nextColor">#3F3F3F</color>
+    <color name="light_dark">#808080</color>
+    <color name="dark">#A8A8A8</color>
+    <color name="dialog_back_color">#E5E0DE</color>
+    <color name="one_time_color">#85EFAB</color>
+    <color name="subscription_color">#85C9EF</color>
+
+
+    <color name="track_color_enabled">@color/white</color> <!-- Color when switch is turned on -->
+    <color name="track_color_disabled">#636363</color> <!-- Color when switch is turned off -->
+    <color name="track_color_disabled_">#D3D3D3</color> <!-- Color when switch is turned off -->
+    <color name="thumb_color_enabled">@color/black</color> <!-- Color for the switch thumb when turned on -->
+    <color name="thumb_color_disabled">@color/white</color> <!-- Color for the switch thumb when turned off -->
+</resources>

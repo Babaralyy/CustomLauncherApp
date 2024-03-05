@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ui.fragments.PaymentFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/arrow_back"
+        app:tint="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/ivBack"
+        android:text="Choose your plan"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <LinearLayout
+        android:id="@+id/paymentLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvBalance"
+        android:orientation="horizontal"
+        android:background="@drawable/payment_back">
+
+        <TextView
+            android:id="@+id/tvSubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/subscription"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvOneTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/one_time_purchase"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivFreedom"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/paymentLay"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/card"
+        android:contentDescription="@string/payment_card" />
+
+
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/ivFreedom"
+        android:layout_below="@id/ivFreedom"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/dummy"
+        android:textColor="#85EFAB"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignStart="@+id/tvPayment"
+        android:layout_below="@id/tvPayment"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/dummy"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvLife"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/tvAmount"
+        android:layout_below="@id/tvAmount"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/dummy"
+        android:textColor="#A8A8A8"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/tvTrial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_above="@id/btnFree"
+        android:fontFamily="@font/poppins"
+        android:text="@string/_3_days_free_trial_then_your_payment_will_be_processed_cancel_it_any_time_during_the_free_trial_in_your_device_settings"
+        android:textColor="#A8A8A8"
+        android:textSize="12sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:paddingStart="25dp"
+        android:paddingTop="13dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="13dp"
+        android:minHeight="48dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:text="@string/dummy"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

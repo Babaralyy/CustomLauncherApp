@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.fragments.OnboardingTwoFragment">
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/arrow_back"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/ivGif"
+        android:layout_width="270dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ivBack"
+        android:src="@drawable/mob_apps_temp" />
+
+
+
+    <TextView
+        android:id="@+id/tvTaglineTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/it_s_that_simple"
+        android:layout_centerHorizontal="true"
+        style="@style/NotificationText"
+        android:layout_below="@+id/ivGif"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottomView"
+        android:background="@drawable/boarding_button_back"
+        style="@style/NotManage"
+        android:text="@string/continue_" />
+
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bottom_view_back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/emailFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/lockPatternFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.LockPatternFragment"
+        android:label="fragment_lock_pattern"
+        tools:layout="@layout/fragment_lock_pattern" >
+        <action
+            android:id="@+id/action_lockPatternFragment_to_confirmLockFragment"
+            app:destination="@id/confirmLockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingOneFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.OnboardingOneFragment"
+        android:label="fragment_onboarding_one"
+        tools:layout="@layout/fragment_onboarding_one" >
+        <action
+            android:id="@+id/action_onboardingOneFragment_to_onboardFragment"
+            app:destination="@id/onboardFragment" />
+        <action
+            android:id="@+id/action_onboardingOneFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.PermissionsFragment"
+        android:label="fragment_permissions"
+        tools:layout="@layout/fragment_permissions" >
+        <action
+            android:id="@+id/action_permissionsFragment_to_onboardingOneFragment"
+            app:destination="@id/onboardingOneFragment"
+            app:popUpTo="@id/onboardingOneFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_permissionsFragment_to_passcodeFragment"
+            app:destination="@id/passcodeFragment" />
+        <action
+            android:id="@+id/action_permissionsFragment_to_freedomFragment"
+            app:destination="@id/freedomFragment" />
+        <action
+            android:id="@+id/action_permissionsFragment_to_restrictGuidesFragment"
+            app:destination="@id/restrictGuidesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardFragment"
+        android:name="com.codecoy.balancelauncherapp.onboarding.OnboardFragment"
+        android:label="fragment_onboard"
+        tools:layout="@layout/fragment_onboard" >
+        <action
+            android:id="@+id/action_onboardFragment_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/freedomFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.FreedomFragment"
+        android:label="fragment_freedom"
+        tools:layout="@layout/fragment_freedom" >
+        <action
+            android:id="@+id/action_freedomFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_freedomFragment_to_passcodeFragment"
+            app:destination="@id/passcodeFragment" />
+        <action
+            android:id="@+id/action_freedomFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_freedomFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmLockFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.ConfirmLockFragment"
+        android:label="fragment_confirm_lock"
+        tools:layout="@layout/fragment_confirm_lock" >
+        <action
+            android:id="@+id/action_confirmLockFragment_to_freedomFragment"
+            app:destination="@id/freedomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passcodeFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.PasscodeFragment"
+        android:label="fragment_passcode"
+        tools:layout="@layout/fragment_passcode" >
+        <action
+            android:id="@+id/action_passcodeFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restrictGuidesFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.RestrictGuidesFragment"
+        android:label="fragment_restrict_guides"
+        tools:layout="@layout/fragment_restrict_guides" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_freedomFragment"
+            app:destination="@id/freedomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" >
+        <action
+            android:id="@+id/action_emailFragment_to_lockPatternFragment"
+            app:destination="@id/lockPatternFragment" />
+        <action
+            android:id="@+id/action_emailFragment_to_confirmLockFragment"
+            app:destination="@id/confirmLockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.codecoy.balancelauncherapp.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.fragments.OnboardingThreeFragment">
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/balance"
+        android:layout_centerHorizontal="true"
+        style="@style/OnboardingHeading"/>
+
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/the_phone_for_conscious_humans"
+        android:layout_centerHorizontal="true"
+        style="@style/NotificationText"
+        android:layout_below="@+id/tvBalance"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivGif"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="47dp"-->
+<!--        android:layout_below="@+id/tvTagline"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:src="@drawable/gif_explain" />-->
+
+    <TextView
+        android:id="@+id/ivGif"
+        android:layout_width="229dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="60dp"
+        android:background="#2E2D2D"
+        android:text="@string/balance"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTagline"
+        style="@style/OnboardingHeading"/>
+
+    <TextView
+        android:id="@+id/tvTaglineTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/everything_you_need"
+        android:layout_centerHorizontal="true"
+        style="@style/NotificationText"
+        android:layout_below="@+id/ivGif"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottomView"
+        android:background="@drawable/boarding_button_back"
+        style="@style/NotManage"
+        android:text="@string/continue_" />
+
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bottom_view_back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472310561732",
+    "project_id": "balance-7e7cb",
+    "storage_bucket": "balance-7e7cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472310561732:android:ea0068a12ee0c4d7f38291",
+        "android_client_info": {
+          "package_name": "com.codecoy.balancelauncherapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF783Tjm0Z7a7f5llBKOr2k7pnnQcKEfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

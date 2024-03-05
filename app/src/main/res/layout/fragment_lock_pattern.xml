@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ui.fragments.LockPatternFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/arrow_back"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        style="@style/DateTextStyle"
+        android:text="@string/monday_1st_of_may"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TimeTextStyle"
+        android:layout_below="@id/tvDate"
+        android:text="@string/_9_38"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvPasscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/set_your_passcode"
+        android:layout_above="@id/etPasscode"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/etPasscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/passcode_back"
+        android:ems="10"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/gridLayout"
+        android:inputType="textPassword"
+        android:textSize="60sp"
+        android:maxLength="4"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="2"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="3"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="4"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="5"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="6"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="7"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="8"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="9"
+            android:layout_row="2"
+            android:layout_column="2" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cell0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:text="0"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnCutText"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/key_pad_background"
+            style="@style/KeyPad"
+            android:src="@drawable/union_"/>
+
+    </GridLayout>
+
+
+</RelativeLayout>
