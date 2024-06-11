@@ -218,6 +218,7 @@ class FreedomFragment : Fragment(), NetworkCallback {
                         } else {
                             Utils.saveSubIntoPref(activity, false)
                         }
+
                     }
                 } else {
                     Log.i(TAG, "fetchSubProducts:: empty ")
